@@ -1,0 +1,21 @@
+{
+    "name": "luisl/dwes04",
+    "description": "Tarea Online 4 para DWES",
+    "type": "project",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "ClasesLuis\\":"src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luis Casanova de Utrilla"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/polyfill-mbstring": "*",
+        "smarty/smarty": "4.5.5"
+    }
+}
