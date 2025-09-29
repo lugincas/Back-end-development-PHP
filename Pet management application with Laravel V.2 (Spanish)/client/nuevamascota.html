@@ -1,0 +1,50 @@
+<!--
+Luis Ginés Casanova de Utrilla
+Desarrollo Web en Entorno Servidor - 2025
+-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nueva mascota</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+</head>
+
+<body>
+    <fieldset class="estiloFormulario"> <!-- Formulario para añadir una nueva mascota -->
+        <form method='post' action='./crearmascota.php'> <!-- El formulario se envía al archivo crearmascota.php, donde se realizará la solicitud -->
+            <label class="tituloFormulario" for="nombre">Nombre de la mascota</label><br />
+            <input type='text' name='nombre'><br />
+            <hr>
+            <label for="descripcion">Descripción</label>
+            <br />
+            <textarea name='descripcion' rows="5" cols="40" placeholder="Escribe aquí la descripción de tu mascota..."></textarea><br />
+            <hr>
+            <label for="tipo">Tipo de mascota</label><br />
+            <input type="radio" name="tipo" value="perro" />Perro
+            <input type="radio" name="tipo" value="gato" />Gato
+            <input type="radio" name="tipo" value="pajaro" />Pájaro<br>
+            <input type="radio" name="tipo" value="dragon" />Dragón
+            <input type="radio" name="tipo" value="conejo" />Conejo
+            <input type="radio" name="tipo" value="hamster" />Hámster<br>
+            <input type="radio" name="tipo" value="tortuga" />Tortuga
+            <input type="radio" name="tipo" value="pez" />Pez
+            <input type="radio" name="tipo" value="serpiente" />Serpiente
+            <br />
+            <hr>
+            <label for="publica">¿Pública?</label><br />
+            <input type="radio" name="publica" value="Si" />Sí
+            <input type="radio" name="publica" value="No" />No
+            <br />
+            <br />
+            <input class="enlaceBoton" type='submit' value='¡Añadir!'>
+        </form>
+
+    </fieldset>
+    <br>
+    <a class="enlaceBoton" href="./mascotas.php">Volver al listado de mascotas del usuario</a>
+</body>
+
+</html>

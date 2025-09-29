@@ -1,0 +1,143 @@
+/* 
+ * Luis Ginés Casanova de Utrilla
+ * Desarrollo Web en Entorno Cliente - 2025 
+ */
+
+body {
+    /* Estilo de nuestro documento (sólo cambiamos el tipo de letra, para mejorar la legibilidad) */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header { /* Estilo de nuestro encabezado público */
+
+    justify-content: center;
+    text-align: center; 
+    background-color: rgb(77, 221, 96);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 5px 25px;
+}
+#headerPrivado{ /* Estilo de nuestro encabezado privado*/
+    background-color: rgb(172, 142, 9);
+}
+
+.contorno{
+    -webkit-text-stroke: 1px rgb(0, 0, 0); 
+}
+
+a{ /* Estilo para enlaces*/
+    text-decoration: none;
+    color: initial;
+}
+
+label{ /* Estilo para etiquetas*/
+    font-weight: bold;
+}
+
+main{ /* Estilo para la zona de contenido*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+}
+
+.enlaceBoton{ /* Estilo para enlaces y botones públicos y genéricos*/
+    background-color: rgb(77, 221, 96);
+    font-size: large;
+    border: 2px solid rgb(8, 139, 26);
+    border-radius: 10px;
+    padding: 10px;
+}
+.enlaceBoton:hover{
+    background-color: rgb(148, 247, 181);
+}
+
+.enlaceBotonPrivado{ /* Estilo para enlaces y botones privados*/
+    background-color: rgb(216, 184, 43);
+    font-size: large;
+    border: 2px solid rgb(179, 122, 0);
+    border-radius: 10px;
+    padding: 10px;
+}
+.enlaceBotonPrivado:hover{
+    background-color: rgb(255, 248, 186);
+    
+}
+
+.enlaceBotonLogout{ /* Estilo para el enlace/botón de cerrar sesión*/
+    background-color: rgb(221, 77, 77);
+    font-size: large;
+    border: 2px solid rgb(139, 8, 8);
+    border-radius: 10px;
+    padding: 10px;
+}
+.enlaceBotonLogout:hover{
+    background-color: rgb(247, 148, 148);
+}
+.estiloLogin{ /* Estilo para el formulario del login*/
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(151, 234, 240);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.estiloFormulario{ /* Estilo para el formulario para añadir mascotas*/
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(240, 231, 151);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#formularioEliminar{
+    background-color: rgb(240, 151, 151);
+}
+
+.enlaceBotonEliminar{ /* Estilo para el enlace/botón de cerrar sesión*/
+    color:rgb(135, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(135, 0, 0);
+    font-size: large;
+    border-radius: 10px;
+    padding: 10px;
+}
+.enlaceBotonEliminar:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(135, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+   
+}
+
+
+th,
+td { /* Estilo para la tabla pública */
+    border: 2px solid rgb(17, 133, 32);
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(7, 233, 37);
+}
+
+td {
+    text-align: center;
+    background-color: rgb(196, 245, 255);
+}
+
+.exito{ /* Estilo genérico de texto remarcado para situaciones exitosas */
+    color: rgb(17, 133, 32);
+    font-weight: bold;
+}
+
+.error{ /* Estilo genérico de texto remarcado para situaciones no exitosas */
+    color: rgb(191, 20, 52);
+    font-weight: bold;
+}
